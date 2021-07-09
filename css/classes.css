@@ -1,0 +1,29 @@
+.header {
+    background-color: #83b6db;
+    color: white;
+    border-radius: 5px;
+}
+
+.indexlink {
+    color: white;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.indexlink:hover {
+    color: #5e5e5e;
+}
+
+.mynav {
+    margin: 5px; 
+    margin-bottom: 0px;
+    background-color: #b3d6fb;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: white;
+}
+
+.mytab {
+    background-color: white;
+}
