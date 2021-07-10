@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/classes.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/bsuir-gerb.png" />
+    <title>АСПЗиЗ -> Профиль</title>
+  </head>
+  <body>
+    <div class="container-fluid header fixed-top">
+        <a href="index.html" class="indexlink">
+            <img src="images/bsuir-gerb.png" width="30px" style="float: left; margin: 10px;">
+            <p style="margin-top: 0.7%; margin-left: 5px; float: left;">Автоматизированная система подачи заявлений и зачисления</p>
+        </a>
+        <p style="float: right; margin: 1%;">
+            Добро пожаловать, <a id="namelink" style="font-weight: bold;"></a>!&nbsp;&nbsp;
+            <a href="profile.html" style="color: white;">[Профиль]</a>&nbsp;&nbsp;
+            [Сообщения]&nbsp;&nbsp;
+            <a href="index.html" style="color: white;">[Выйти]</a>
+        </p>
+    </div>
+    <br/><br/><br/>
+    <div class="container" style="margin: 60px; max-width: 92%; margin-top: 5px;">
+        <span class="badge badge-secondary" style="background-color: #428bca; margin: 1px;">Заявление можно отправить на ПЕЧАТЬ</span>    
+        <div class="alert alert-primary" role="alert" style="background-color: #d9edf7;">
+            <p style="float: left; font-weight: bold; font-size: 14px; margin: 10px; margin-top: 15px; margin-left: 0px;">ВНИМАНИЕ!</p>
+            <button class="btn btn-primary" type="button" style="float: right;">ПЕЧАТЬ (pdf)</button>
+            Вам необходимо прийти в БГУИР и подать распечатанное заявление и оригиналы документов в приемную комиссию по адресу: г. Минск, ул. П.Бровки, 4<br/>
+            Несовершеннолетним абитуриентам необходимо присутствие законных представителей с документом, удостоверяющим личность
+        </div>
+        <ul class="nav nav-tabs" id="chooseTab" role="tablist" style="background-color: #83b6db;">
+            <li class="nav-item mynav">
+              <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">Личная информация</a>
+            </li>
+            <li class="nav-item mynav">
+              <a class="nav-link" id="spec-tab" data-toggle="tab" href="#spec" role="tab" aria-controls="spec" aria-selected="false">Основное заявление</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active mytab" id="info" role="tabpanel" aria-labelledby="info-tab">
+                <br/>
+                <div style="margin: 20px; margin-top: 0px;">
+                    <button type="button" class="btn btn-outline-secondary" style="width: 250px;">Редактировать</button><br/><br/>
+                    <div class="row">
+                        <div class="col-4">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">✔ ФИО</th><th></th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Фамилия</td><td id="1_surname">Иванов</td></tr>
+                                    <tr><td>Фамилия латиницей</td><td id="1_surname_lat">IVANOU</td></tr>
+                                    <tr><td>Имя</td><td id="1_name">Иван</td></tr>
+                                    <tr><td>Имя латиницей</td><td id="1_name_lat">IVAN</td></tr>
+                                    <tr><td>Отчество</td><td id="1_patronim">Иванович</td></tr>
+                                    <tr><td>Дата рождения</td><td id="1_date-of-birth">01.12.2003</td></tr>
+                                    <tr><td>Место рождения</td><td id="1_place-of-birth">Российская Империя, Минская губерния, г. Минск</td></tr>
+                                    <tr><td>Пол</td><td id="1_sex">Мужской</td></tr>
+                                    <tr><td>Семейное положение</td><td id="1_family">Холост</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">✔ Документ, удостоверяющий личность</th><th></th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Тип документа</td><td id="surname">Паспорт</td></tr>
+                                    <tr><td>Идентификационный номер</td><td id="surname_lat">11010001101001</td></tr>
+                                    <tr><td>Серия</td><td id="name">ДС</td></tr>
+                                    <tr><td>Номер</td><td id="name_lat">7770777</td></tr>
+                                    <tr><td>Дата выдачи</td><td id="patronim">01.12.2018</td></tr>
+                                    <tr><td>Срок действия</td><td id="date-of-birth">01.12.2028</td></tr>
+                                    <tr><td>Кем выдан</td><td id="place-of-birth">Минский ГОВД Минской Губернии</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">
+                                        <span class="badge badge-secondary" style="background-color: #428bca; margin: 1px;">По конкурсу</span>
+                                    </th><th></th></tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">✔ Вступительные испытания. Сумма баллов: 400</th><th></th><th></th><th></th></tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Дисциплина</th>
+                                        <th scope="col">Форма экзамена</th>
+                                        <th scope="col">Кол-во баллов</th>
+                                        <th scope="col">Балл в документе об образовании</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Русский язык</td><td id="surname">ЦТ</td><td id="surname">100</td><td id="surname">10</td></tr>
+                                    <tr><td>Математика</td><td id="surname">ЦТ</td><td id="surname">100</td><td id="surname">10</td></tr>
+                                    <tr><td>Физика</td><td id="surname">ЦТ</td><td id="surname">100</td><td id="surname">10</td></tr>
+                                    <tr><td>Ср. балл документа об образовании</td><td id="surname"></td><td id="surname">100</td><td id="surname"></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">✔ Образование</th><th></th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Уровень</td><td id="4_level">Общее среднее образование</td></tr>
+                                    <tr><td>Учреждение</td><td id="4_org">средняя школа</td></tr>
+                                    <tr><td>Документ</td><td id="4_doc">аттестат об общем среднем образовании</td></tr>
+                                    <tr><td>Номер учебного заведения или аббревиатура</td><td id="4_school">СШ№1 г.Минска</td></tr>
+                                    <tr><td>Номер документа</td><td id="4_numdoc">1337111</td></tr>
+                                    <tr><td>Дата окончания</td><td id="4_date">10.06.2021</td></tr>
+                                    <tr><td>Иностранный язык</td><td id="4_foreign">Английский язык</td></tr>
+                                    <tr><td>Ср. балл документа об образовании</td><td id="4_medium">100</td></tr>
+                                </tbody>
+                            </table>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">✔ Адрес</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>200000, Российская Империя, Минская Губерния, г. Минск, ул. Пушкина, 1
+                                        <br/>
+                                        <span class="badge badge-secondary" style="background-color: #428bca; margin: 1px;">Нуждаюсь в общежитии на время учебы</span>
+                                    </td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">✔ Телефон и e-mail</th><th></th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Дом. тел. код города</td><td>017</td></tr>
+                                    <tr><td>Дом. телефон</td><td>11111</td></tr>
+                                    <tr><td>Моб. телефон</td><td>+70291110111</td></tr>
+                                    <tr><td>Эл. почта</td><td>ivan.ivanov@pochta.ru</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">✔ Отец</th><th></th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Тип родства</td><td>отец</td></tr>
+                                    <tr><td>Фамилия</td><td>Иванов</td></tr>
+                                    <tr><td>Имя</td><td>Иван</td></tr>
+                                    <tr><td>Отчество</td><td>Иванович</td></tr>
+                                    <tr><td>Адрес</td><td>200000, Российская Империя, Минская Губерния, г. Минск, ул. Пушкина, 1</td></tr>
+                                    <tr><td>Место работы и должность</td><td>Минское Губернаторство, губернатор</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr><th scope="col">✔ Мать</th><th></th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Тип родства</td><td>мать</td></tr>
+                                    <tr><td>Фамилия</td><td>Иванова</td></tr>
+                                    <tr><td>Имя</td><td>Ивана</td></tr>
+                                    <tr><td>Отчество</td><td>Ивановна</td></tr>
+                                    <tr><td>Адрес</td><td>200000, Российская Империя, Минская Губерния, г. Минск, ул. Пушкина, 1</td></tr>
+                                    <tr><td>Место работы и должность</td><td>Минское Губернаторство, жена губернатора</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary" style="width: 250px;">Редактировать</button>&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-primary" style="width: 250px;">Печать в формате PDF</button><br/><br/>
+                </div>
+            </div>
+            <div class="tab-pane" id="spec" role="tabpanel" aria-labelledby="spec-tab">yamete kudasai, oni-chan</div>
+          </div>
+    </div>
+    <div class="container-fluid header">
+        <br/><p style="margin-left: 60px; font-size: 12px;">© БГУИР, 2021&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;БГУИР - знания и стиль жизни!</p><br/>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>

@@ -7,10 +7,10 @@
 .indexlink {
     color: white;
     font-size: 22px;
-    transition: 0.3s;
 }
 
 .indexlink:hover {
+    transition: 0.3s;
     color: #5e5e5e;
 }
 
@@ -26,4 +26,28 @@
 
 .mytab {
     background-color: white;
+}
+
+.btn-primary {
+    background-color: #428bca;
+}
+
+.btn-primary:enabled {
+    background-color: #428bca;
+}
+
+.btn-primary:hover {
+    background-color: #3276b1;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+}
+
+.btn-success:enabled {
+    background-color: #5cb85c;
+}
+
+.btn-success:hover {
+    background-color: #47a447;
 }
