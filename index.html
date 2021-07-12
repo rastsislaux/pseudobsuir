@@ -17,6 +17,18 @@
         <p style="float: right; margin: 1%;">Добро пожаловать!</p>
     </div>
     <br/><br/><br/>
+    <div class="alert alert-primary" role="alert" id="got_it_alert" style="background-color: #d9edf7; margin: 70px; margin-top: 0px; margin-bottom: 15px; max-width: 90%;">
+        <button class="btn btn-primary" id="got_it" type="button" style="float: right; margin-top: -7px;">Понял!</button>
+        <script>
+            btn = document.getElementById("got_it");
+            btn.onclick = got_it;
+            
+            function got_it() {
+                $('#got_it_alert').hide()
+            }
+        </script>
+        Внимание! Это ненастоящий сайт АСПЗиЗ, а лишь его копия, созданная в образовательных целях. Настоящий сайт распологается по адресу <a href="priem.bsuir.by">priem.bsuir.by</a>
+    </div>
     <div class="container" style="margin: 70px; max-width: 90%; margin-top: 5px; margin-bottom: 30px; background-color: white;">
         <div class="row">
             <div class="col">
